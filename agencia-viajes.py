@@ -120,17 +120,20 @@ while True:
         print("Su cotización es la siguiente: ")
         print(f"Nombre del cliente: {nom_cliente} ")
         if dest == 1:
-            subtotalGua = ((dest1ValAdu * perso_adultas) + (dest1ValNi * perso_niños))
+            subtotalGua = ((dest1ValAdu * perso_adultas) +
+                           (dest1ValNi * perso_niños))
             subtotal = subtotalGua
             totalDinGua += subtotalGua
             print(f"Nombre del destino: {dest1}")
         elif dest == 2:
-            subtotalChi = ((dest2ValAdu * perso_adultas) + (dest2ValNi * perso_niños))
+            subtotalChi = ((dest2ValAdu * perso_adultas) +
+                           (dest2ValNi * perso_niños))
             subtotal = subtotalChi
             totalDinChi += subtotalChi
             print(f"Nombre del destino: {dest2}")
         elif dest == 3:
-            subtotalLla = ((dest3ValAdu * perso_adultas) + (dest3ValNi * perso_niños))
+            subtotalLla = ((dest3ValAdu * perso_adultas) +
+                           (dest3ValNi * perso_niños))
             subtotal = subtotalLla
             totalDinLla += subtotalLla
             print(f"Nombre del destino: {dest3}")
@@ -142,36 +145,47 @@ while True:
 
     elif ope == 2:
         if dest == 1:
-            subtotalGua = ((dest1ValAdu * perso_adultas) + (dest1ValNi * perso_niños))
+            subtotalGua = ((dest1ValAdu * perso_adultas) +
+                           (dest1ValNi * perso_niños))
             totalDinGua += subtotalGua
         elif dest == 2:
-            subtotalChi = ((dest2ValAdu * perso_adultas) + (dest2ValNi * perso_niños))
+            subtotalChi = ((dest2ValAdu * perso_adultas) +
+                           (dest2ValNi * perso_niños))
             totalDinChi += subtotalChi
         elif dest == 3:
-            subtotalLla = ((dest3ValAdu * perso_adultas) + (dest3ValNi * perso_niños))
+            subtotalLla = ((dest3ValAdu * perso_adultas) +
+                           (dest3ValNi * perso_niños))
             totalDinLla += subtotalLla
         print("Nueva Cotización")
     elif ope == 3:
         if dest == 1:
-            subtotalGua = ((dest1ValAdu * perso_adultas) + (dest1ValNi * perso_niños))
+            subtotalGua = ((dest1ValAdu * perso_adultas) +
+                           (dest1ValNi * perso_niños))
             totalDinGua += subtotalGua
         elif dest == 2:
-            subtotalChi = ((dest2ValAdu * perso_adultas) + (dest2ValNi * perso_niños))
+            subtotalChi = ((dest2ValAdu * perso_adultas) +
+                           (dest2ValNi * perso_niños))
             totalDinChi += subtotalChi
         elif dest == 3:
-            subtotalLla = ((dest3ValAdu * perso_adultas) + (dest3ValNi * perso_niños))
+            subtotalLla = ((dest3ValAdu * perso_adultas) +
+                           (dest3ValNi * perso_niños))
             totalDinLla += subtotalLla
         # impresión de informe general
         print("A continuación se imprime informe general:")
         print("")
         print("****INFORME GENERAL********")
         print("")
-        print(f"Cantidad de personas que viajan a La Guajira es: {totalGuajira}")
-        print(f"Cantidad de personas que viajan a El Cañón de Chicamocha:{totalChicamocha} ")
-        print(f"Cantidad de personas que viajan a Los Llanos Orientales:{totaLlanosOrientales}")
+        print(
+            f"Cantidad de personas que viajan a La Guajira es: {totalGuajira}")
+        print(
+            f"Cantidad de personas que viajan a El Cañón de Chicamocha:{totalChicamocha} ")
+        print(
+            f"Cantidad de personas que viajan a Los Llanos Orientales:{totaLlanosOrientales}")
         print(f"El total de dinero de los viajes a La Guajira:${totalDinGua} ")
-        print(f"El total de dinero de los viajes a El Cañón de Chicamocha:${totalDinChi} ")
-        print(f"El total de dinero de los viajes a Los Llanos Orientales:${totalDinLla} ")
+        print(
+            f"El total de dinero de los viajes a El Cañón de Chicamocha:${totalDinChi} ")
+        print(
+            f"El total de dinero de los viajes a Los Llanos Orientales:${totalDinLla} ")
         Adultos = AdultosGua + AdultosChi + AdultosLla
         print(f"Total de personas adultas:{Adultos} ")
         Niños = NiñosGua + NiñosChi + NiñosLla
@@ -179,5 +193,5 @@ while True:
         totalDinDesti = totalDinGua + totalDinChi + totalDinLla
         print(f"Total de dinero de todos los destinos:${totalDinDesti} ")
         print("")
-        print("*****PROCESO FINALIZADO***")
+        print("*****PROCESO TERMINADO***")
         break
